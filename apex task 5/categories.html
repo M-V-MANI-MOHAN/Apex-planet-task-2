@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop by Category</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">🛍️ Shop by Category</h1>
+    </header>
+
+    <main class="categories-container">
+        <a href="electronics.html" class="category-card">
+            <img src="https://img.icons8.com/ios/100/monitor.png" alt="Electronics">
+            <span>Electronics</span>
+        </a>
+        <a href="fashion.html" class="category-card">
+            <img src="https://img.icons8.com/ios/100/t-shirt.png" alt="Fashion">
+            <span>Fashion</span>
+        </a>
+        <a href="home appliances.html" class="category-card">
+            <img src="https://img.icons8.com/ios/100/sofa.png" alt="Home">
+            <span>Home & Living</span>
+        </a>
+        <a href="sports.html" class="category-card">
+            <img src="https://img.icons8.com/ios/100/football.png" alt="Sports">
+            <span>Sports</span>
+        </a>
+    </main>
+</body>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background: #f8f9fa;
+        color: #333;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 20px 10px;
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+        color: white;
+        margin: 0;
+    }
+    
+    .categories-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .category-card {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0 4px 12px rgba(218, 16, 16, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .category-card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .category-card span {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+</style>
+
+</html>

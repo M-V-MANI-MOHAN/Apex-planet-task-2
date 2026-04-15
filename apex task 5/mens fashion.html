@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Fashion</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background: #f2f2f2;
+            color: #333;
+        }
+        
+        header {
+            background: #1e1e2f;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1rem;
+            color: #aaa;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1rem;
+        }
+        
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+        
+        .card-content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.1rem;
+        }
+        
+        .buy-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .buy-btn:hover {
+            background: #0056b3;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .card img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Men's Fashion</h1>
+        <p>Explore the latest trends in men's clothing & accessories</p>
+    </header>
+
+    <section class="products">
+        <div class="card">
+            <img src="jacket.webp" alt="Jacket">
+            <div class="card-content">
+                <h3>Classic Leather Jacket</h3>
+                <p>Perfect for casual or bike rides. Premium quality material.</p>
+                <div class="price">₹3,999</div>
+                <a href="bye now.html" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="shoes.jpg" alt="Shoes">
+            <div class="card-content">
+                <h3>Running Shoes</h3>
+                <p>Lightweight, durable, and stylish for all-day comfort.</p>
+                <div class="price">₹1,279</div>
+                <a href="bye now.html" class="buy-btn">Bye Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="pant.jpg" alt="Watch">
+            <div class="card-content">
+                <h3>jean pant</h3>
+                <p>Relaxed Jeans</p>
+                <div class="price">₹2,120</div>
+                <a href="bye now.html" class="buy-btn">Bye now</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

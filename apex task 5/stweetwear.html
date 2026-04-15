@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streetwear Fashion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to right, #111, #222);
+            border-bottom: 3px solid #ff4141;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #ff4141;
+            text-shadow: 2px 2px 10px rgba(255, 65, 65, 0.5);
+        }
+        
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .item-card {
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 30px rgba(255, 65, 65, 0.3);
+        }
+        
+        .item-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .item-info {
+            padding: 1rem;
+        }
+        
+        .item-info h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        
+        .item-info p {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+        
+        .item-info a {
+            text-decoration: none;
+            background-color: #ff4141;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .item-info a:hover {
+            background-color: #e63232;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .price {
+            text-align: center;
+            font-weight: bold;
+            color: #ff4141;
+            text-shadow: 2px 2px 10px rgba(255, 65, 65, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Streetwear Fashion</h1>
+    </header>
+
+    <section class="collection">
+        <div class="item-card">
+            <img src="hoodies.avif" alt="Hoodie">
+            <div class="item-info">
+                <h2>Oversized Hoodie</h2>
+                <p>Cozy and bold — perfect for everyday street vibes.</p>
+                <div class="price">₹1,999</div>
+                <a href="bye now.html">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="sneakers.webp" alt="Sneakers">
+            <div class="item-info">
+                <h2>Chunky Sneakers</h2>
+                <p>Trendsetting and super comfy for urban walks.</p>
+                <div class="price">₹1,599</div>
+                <a href="bye now.html">Bye now</a>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="cargo.jpg" alt="Cargo Pants">
+            <div class="item-info">
+                <h2>Cargo Pants</h2>
+                <p>Utility-style pants for a complete street look.</p>
+                <div class="price">₹2,999</div>
+                <a href="bye now.html">Bye now</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

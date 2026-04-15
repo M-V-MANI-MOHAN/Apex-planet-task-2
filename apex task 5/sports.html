@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f0f2f5;
+            color: #222;
+        }
+        
+        header {
+            background: #003366;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+        }
+        
+        .sports-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.2rem;
+        }
+        
+        .card-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #003366;
+        }
+        
+        .card-content p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .card-content .price {
+            font-weight: bold;
+            color: #e60023;
+            margin-bottom: 1rem;
+        }
+        
+        .card-content a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .card-content a:hover {
+            background: #0055aa;
+        }
+        
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sports </h1>
+        <p>Gear up for your game with premium sports products</p>
+    </header>
+
+    <section class="sports-container">
+        <div class="card">
+            <img src="football.jpg" alt="Football">
+            <div class="card-content">
+                <h3>Football</h3>
+                <p>High-quality leather football, perfect for training and matches.</p>
+                <div class="price">₹999</div>
+                <a href="bye now.html">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="cricket kit.webp" alt="Cricket Kit">
+            <div class="card-content">
+                <h3>Cricket Kit</h3>
+                <p>Complete kit including bat, pads, gloves, and helmet.</p>
+                <div class="price">₹4,599</div>
+                <a href="bye now.html">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="badminton Set.webp" alt="Badminton Set">
+            <div class="card-content">
+                <h3>Badminton Set</h3>
+                <p>Lightweight rackets with 6 durable shuttlecocks and carry bag.</p>
+                <div class="price">₹1,249</div>
+                <a href="bye now.html">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="yoga mat.webp" alt="Yoga Mat">
+            <div class="card-content">
+                <h3>Yoga Mat</h3>
+                <p>Non-slip, eco-friendly mat perfect for yoga and stretching.</p>
+                <div class="price">₹799</div>
+                <a href="bye now.html">Buy Now</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

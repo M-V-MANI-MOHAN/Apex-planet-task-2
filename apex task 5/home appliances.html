@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Appliances</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
+        
+        header {
+            background: #3b3b98;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        
+        .appliance-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .appliance-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .appliance-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .appliance-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .appliance-info {
+            padding: 1rem;
+        }
+        
+        .appliance-info h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #3b3b98;
+        }
+        
+        .appliance-info p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .appliance-info a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #3b3b98;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .appliance-info a:hover {
+            background: #2c2c84;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5rem;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>Home Appliances</header>
+
+    <section class="appliance-container">
+        <div class="appliance-card">
+            <img src="refrigerator.avif" alt="Refrigerator">
+            <div class="appliance-info">
+                <h2>Refrigerators</h2>
+                <p>Energy-efficient, spacious, and modern designs.</p>
+                <div class="price">₹29,999</div>
+                <a href="bye now.html">Bye now</a>
+            </div>
+        </div>
+
+        <div class="appliance-card">
+            <img src="washing machine.jpg" alt="Washing Machine">
+            <div class="appliance-info">
+                <h2>Washing Machines</h2>
+                <p>Top-load and front-load washers with smart tech.</p>
+                <div class="price">₹19,599</div>
+                <a href="bye now.html">Bye Now</a>
+            </div>
+        </div>
+
+        <div class="appliance-card">
+            <img src="microwave oven.webp" alt="Microwave Oven">
+            <div class="appliance-info">
+                <h2>Microwave Ovens</h2>
+                <p>Fast, efficient cooking with multiple modes.</p>
+                <div class="price">₹10,999</div>
+                <a href="bye now.html">Bye now</a>
+            </div>
+        </div>
+
+        <div class="appliance-card">
+            <img src="air conditioner.webp" alt="Air Conditioner">
+            <div class="appliance-info">
+                <h2>Air Conditioners</h2>
+                <p>Stay cool with powerful and eco-friendly ACs.</p>
+                <div class="price">₹45,999</div>
+                <a href="bye now.html">Bye now</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
